@@ -8,10 +8,22 @@ Desenvolver um dashboard para analisar o desempenho de vendas de um restaurante,
 
 ## 🛠 Ferramentas Utilizadas
 
-* Excel
-* SQL Server
-* Power BI
+* 📗 Excel
+* 🗄 SQL Server
+* 📊 Power BI
+* ⚙️ Git
+* 🐙 GitHub
 
+---
+## 💼 Competências Desenvolvidas
+* 📊 Limpeza de Dados
+* 📗 Excel
+* 🗄️ SQL Server
+* 📝 Consultas SQL
+* 📈 Modelagem de Indicadores
+* 📊 Power BI
+* 📖 Storytelling com Dados
+* 🐙 Git e GitHub
 ---
 
 ## 📂 Fonte dos Dados
