@@ -1,0 +1,63 @@
+------- FATURAMENTO TOTAL -------
+SELECT 
+	SUM([ VALOR ]) as FATURAMENTO_TOTAL
+FROM ['Projeto Restaurante$']
+------- PRATOS MAIS VENDIDOS POR MÊS -------
+SELECT
+	MONTH(DATA) as MÊS,
+	PRATO,
+	SUM(QUANTIDADE) as Total_Vendido
+FROM ['Projeto Restaurante$']
+GROUP BY MONTH(DATA) , PRATO
+ORDER BY MÊS , Total_Vendido DESC
+
+------ TICKT MÉDIO ------
+SELECT
+	MONTH(DATA) as Mês,
+	AVG([ VALOR ]) as Tickt_Médio
+FROM ['Projeto Restaurante$']
+GROUP BY MONTH(DATA)
+ORDER BY Tickt_Médio DESC
+
+-------QUANTIDADE DE BEBIDAS VENDIDAS-------
+SELECT 
+	BEBIDA,
+	COUNT(BEBIDA) as Quantidades
+FROM ['Projeto Restaurante$']
+GROUP BY BEBIDA
+ORDER BY Quantidades DESC
+
+------- CLIENTES QUE MAIS COMPRAM --------
+SELECT TOP 10
+	CLIENTE,
+	SUM([ VALOR ]) as Total_Gasto
+FROM ['Projeto Restaurante$']
+GROUP BY CLIENTE
+ORDER BY Total_Gasto desc
+
+------- Janeiro , Fevereiro , Março -------
+SELECT 
+	MONTH(DATA) as Faturamento_Mensal,
+	SUM([ VALOR ])as Faturamento_Total	
+FROM ['Projeto Restaurante$']
+GROUP BY MONTH(DATA)
+ORDER BY Faturamento_Total  DESC
+
+-------- PRATOS COM MAIOR FATURAMENTO -------
+SELECT 
+	PRATO,
+	SUM(QUANTIDADE) as Total,
+	SUM([ VALOR ]) as Valor
+FROM ['Projeto Restaurante$']
+GROUP BY PRATO
+ORDER BY Valor DESC
+
+-------TOTAL PEDIDOS -------
+SELECT
+	COUNT(DISTINCT ID) as Pedidos_Unicos
+FROM ['Projeto Restaurante$']
+
+------- CLIENTES UNICOS -------
+SELECT
+	COUNT (DISTINCT CLIENTE) as Clientes_Unicos
+FROM ['Projeto Restaurante$']
