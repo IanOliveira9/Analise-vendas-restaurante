@@ -143,6 +143,8 @@ Storytelling com dados
 Ian José de Oliveira
 
 Em transição de carreira para a área de Dados, desenvolvendo projetos práticos com Excel, SQL Server e Power BI.
+- GitHub: https://github.com/IanOliveira9
+- LinkedIn: www.linkedin.com/in/ianjosédeoliveira
 
 ## 🎯 Conclusão
 
